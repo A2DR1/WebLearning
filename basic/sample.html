@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample HTML</title>
+
+        <style>
+
+            .header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 20px;
+                /* border-bottom: 1px solid black; */
+                padding: 20px 0;
+            }
+
+            .logo {
+                height: 60px;
+                width: 60px;
+                background-color: lightblue;
+                color: white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav a{
+                margin: 0 20px;
+            }
+
+            .nav a:first-child{
+                text-decoration: underline;
+            }
+
+            .searchIcon {
+                height: 30px;
+                width: 30px;
+            }
+
+            .intro {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: bottom;
+                margin: 0 200px;
+                /* border-bottom: 1px solid black; */
+            }
+
+            .image-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .banner {
+                width: 300px;
+                height: 160px;
+                background-color: lightblue;
+                color: darkblue;
+                border-radius: 5px;
+                margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .right-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: bottom;
+                margin-left: 20px;
+            }
+
+            .chart {
+                display: grid;
+                grid-template-columns: repeat(6, 100px);
+                grid-template-rows: repeat(4, 50px);
+                justify-content: center;
+                align-content: center;
+            }
+
+            .data {
+                position: relative;
+                margin: 40px 0;
+            }
+
+            .image1 {
+                width: 200px;
+                height: 150px;
+                position: absolute;
+                left: calc(50vw - 200px);
+                top: 60px;
+                background-color: lightblue;
+            }
+
+            .image2 {
+                width: 200px;
+                height: 150px;
+                position: absolute;
+                left: calc(50vw + 50px);
+                top: 60px;
+                background-color: lightblue;
+            }
+
+            .footer {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                align-items: bottom;
+                margin: 20px;
+                padding: 20px 0;;
+            }
+            
+            .footer-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: bottom;
+            }
+
+            .social-logo img:first-of-type{
+                margin-right: 20px;
+            }
+
+            .social-logo img{
+                height: 30px;
+                width: 30px;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            body {
+                position: relative;
+            }
+
+            .modal {
+                position: fixed;
+                width: 300px;
+                height: 200px;
+                background-color: lightgreen;
+                border-radius: 30px;
+                top: 50%;
+                left: 50%;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                transform: translate(-50%, -50%);
+            }
+
+            .model-popup{
+                display: flex;
+            }
+
+            .main-content-popup {
+                /* filter: grayscale(100%); */
+                filter: blur(5px);
+            }
+
+            .modal input {
+                font-size: 20px;
+                /* width: 80%;
+                height: 30px;
+                margin: 20px; */
+                padding: 10px;
+                border-radius: 30px;
+                border: 1px solid #ccc;
+            }
+
+            @media (max-width: 676px) {
+                .intro {
+                    margin: 0 20px;
+                }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="header">
+                <div>
+                    <div class="logo">LOGO</div>
+                </div>
+                <div class="nav">
+                    <a href="" class="link">Home</a>
+                    <a href="" class="link">Product</a>
+                    <a href="" class="link">Support</a>
+                    <a href="" class="link">Contact</a>
+                </div>
+                <div>
+                    <img src="./icons/search.png" alt="Search Icon" class="searchIcon"></img>
+                </div>
+            </div>
+            <hr />
+            <div class="main">
+                <div class="intro">
+                    <h1>Austin Shen</h1>
+                    <p>Hi! I’m Austin Shen, a Data Science, Math, and Physics student at the University of Michigan. I’m passionate about machine learning, robotics, and building tools that bridge the gap between research and real-world impact. Whether it’s analyzing data, designing smart systems, or exploring the universe with code, I love turning ideas into something useful.</p>
+                    <p>Currently, I’m involved in research projects that explore AI in healthcare, robotics, and astronomy. I also enjoy working on personal apps and sharing what I learn along the way.</p>
+                </div>
+                <hr />
+                <div class="image-text">
+                    <div class="banner">
+                        Image
+                    </div>
+                    <div class="right-text">
+                        <h2>My Projects</h2>
+                        <p>Here are some of the projects I’ve worked on:</p>
+                    </div>
+                </div>
+                <hr />
+                <div class="data">
+                    <div class="chart">
+                        <div></div>
+                        <div>option</div>
+                        <div>option</div>
+                        <div>option</div>
+                        <div>option</div>
+                        <div>option</div>
+
+                        <div>option</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div>option</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+
+                        <div>option</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="image1"></div>
+                    <div class="image2"></div>
+                </div>
+            </div>
+            <hr />
+            <div class="footer">
+                <div class="footer-left">
+                    <h2>Austin Shen</h2>
+                    <div class="footer-links">
+                        <a href="">about us</a>
+                        <a href="">contact us</a>
+                        <a href="">products</a>
+                        <a href="">coorporate</a>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <h2>Social</h2>
+                    <div class="social-logo">
+                        <img src="./icons/facebook.avif" alt="Facebook" class="social-icon"></img>
+                        <img src="./icons/instagram.png" alt="Twitter" class="social-icon"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <input type="text" placeholder="Search... product name" class="search-input">
+        </div>
+
+        <script>
+            const popup = document.querySelector('.searchIcon');
+            const modal = document.querySelector('.modal');
+            const mainContent = document.querySelector('.main-content');
+            const main = document.querySelector('.main');
+
+            popup.onclick = () => {
+                modal.classList.add('model-popup');
+                // mainContent.setAttribute('poped', 'true');
+                mainContent.classList.add('main-content-popup');
+            }
+
+            // modal.onmouseout = () => {
+            //     if (modal.classList.contains('model-popup')) {
+            //         modal.classList.remove('model-popup');
+            //         mainContent.classList.remove('main-content-popup');
+            //     }
+            // }
+
+            main.onclick = () => {
+                if (modal.classList.contains('model-popup')) {
+                    modal.classList.remove('model-popup');
+                    mainContent.classList.remove('main-content-popup');
+                }
+            }
+
+        </script>
+    </body>
+</html>

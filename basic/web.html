@@ -1,0 +1,104 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <style type="text/css">
+        /* CSS styles can be added here */
+
+        /* 类选择器，对元素本身起作用 */
+        .style1{
+            color: purple;
+            display: block;
+            background-color: antiquewhite;
+            font-size: 40px;
+            transform: rotate(10deg);
+            text-align: center;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .style1:hover{
+            color: red;
+            transform: rotate(-10deg);
+        }
+        /* 后代选择器，对元素本身没有效果 */
+        .style2 p{
+            color: red;
+        }
+
+        p.style3{
+            color: orange;
+        }
+
+        .container > div {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(207 232 220);
+            border: 2px solid rgb(79 185 227);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .link {
+            color: blue;
+            /* text-decoration: none; */
+            font-size: 20px;
+        }
+
+        .link:hover{
+            color: green;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <main>
+        <section id="content">
+            <p>This is a simple web page.</p>
+        </section>
+        
+        <p id="Hello0" class="style1">hello world</p>
+
+        <div id="Hello1" class="style1">
+            <span>hello world</span>
+            <span>bye world</span>
+        </div>
+
+        <p class="style3">hello world</p>
+
+        <div class="container">
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+            <div>Six</div>
+            <div>Seven</div>
+        </div>
+          
+        <div style="height: 900px"> </div>
+
+        <div id="bottom"><a href="#top" target="_self" class="link">Go to top</a></div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Web Page</p>
+    </footer>
+    <script>
+        // JavaScript code can be added here
+        console.log("Web page loaded");
+    </script>
+</body>
